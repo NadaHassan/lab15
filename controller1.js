@@ -5,3 +5,8 @@ app.controller("fbIn", function($scope, fbService){
 		var fbValue = $scope.fbNum;
 	}
 });
+
+
+app.controller("fbOut", function($scope, fbService){
+
+});

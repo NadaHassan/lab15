@@ -24,3 +24,17 @@ app.controller("fbOut", function($scope, fbService){
 		$scope.fbOutput = "Not Fizz or Buzz!";
 	}
 });
+
+app.controller("reddit", function($scope, $http){
+	$http({
+		method: "GET",
+		url: "https://www.reddit.com/r/aww.json"
+	}).then(function (response){
+		console.log(response);
+		$scope.posts = response.data.data.children;
+
+	}, function (response){
+		console.log("Fail");
+
+	});
+});

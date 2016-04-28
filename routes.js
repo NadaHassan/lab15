@@ -20,4 +20,4 @@ app.config(function($routeProvider){
   	templateUrl: "partial3.html"
   })
   .otherwise({redirectTo: "/"});
-});
+  });

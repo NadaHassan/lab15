@@ -7,7 +7,6 @@ app.controller("fbIn", function($scope, fbService){
 		console.log(fbValue);
 		fbService.getData(fbValue);
 	}
-	
 });
 
 
@@ -37,4 +36,5 @@ app.controller("reddit", function($scope, $http){
 		console.log("Fail");
 
 	});
+
 });
